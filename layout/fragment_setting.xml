@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/wifi_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:background="@drawable/btn_container"
+        android:textAlignment="center"
+        android:hint="Tên wifi" />
+    <EditText
+        android:id="@+id/wifi_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:background="@drawable/btn_container"
+        android:textAlignment="center"
+        android:layout_below="@+id/wifi_name"
+        android:hint="Mật khẩu" />
+    <EditText
+        android:id="@+id/mac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:background="@drawable/btn_container"
+        android:textAlignment="center"
+        android:layout_below="@+id/wifi_password"
+        android:hint="MAC" />
+    <EditText
+        android:id="@+id/ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:background="@drawable/btn_container"
+        android:textAlignment="center"
+        android:layout_below="@+id/mac"
+        android:hint="Địa chỉ IP" />
+    <EditText
+        android:id="@+id/port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp"
+        android:inputType="number"
+        android:background="@drawable/btn_container"
+        android:textAlignment="center"
+        android:layout_below="@+id/ip"
+        android:hint="Cổng" />
+    <EditText
+        android:id="@+id/numberSentLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp"
+        android:inputType="number"
+        android:background="@drawable/btn_container"
+        android:textAlignment="center"
+        android:layout_below="@+id/port"
+        android:visibility="gone"
+        android:hint="Số dòng gửi / lần" />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberSentLine"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Xác nhận"/>
+
+    <TextView
+        android:id="@+id/setting_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirm_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
